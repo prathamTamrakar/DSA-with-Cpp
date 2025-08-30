@@ -80,7 +80,18 @@ public:
         delete temp;
     }
     void pop_back(){
-        
+        if(head==NULL){
+            cout << "LINked list is empty" << endl;
+            return;
+        }
+        Node *temp = head;
+        while(temp->next->next != NULL){
+            temp = temp->next;
+        }
+        temp->next = NULL;
+        delete tail;
+        tail = temp;
+
     }
 
     // void print(){
@@ -114,6 +125,19 @@ public:
         newNode->next = temp->next;
         temp->next = newNode;
     }
+
+    int searchItr(int key){
+        Node *temp = head;
+        int idx=0;
+        while(temp != NULL){
+            if(temp->data == key){
+                return idx;
+            }
+                temp = temp->next;
+                idx++;
+        }
+        return -1;
+    }
 };
 
 int main()
@@ -128,11 +152,22 @@ int main()
     ll.push_front(2);
     ll.push_front(1);
     ll.printList();
+
     ll.push_back(4);
     ll.printList();
+
     ll.insertInMiddle(5,2);
     ll.printList();
-    ll.pop_front();
-    ll.printList();
+
+    // ll.pop_front();
+    // ll.printList();
+
+    // ll.pop_back();
+    // ll.printList();
+
+
+    
+
+    cout << ll.searchItr(45) << endl;
     return 0;
 }

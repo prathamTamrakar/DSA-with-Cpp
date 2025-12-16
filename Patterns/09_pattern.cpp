@@ -18,7 +18,12 @@ using namespace std;
 // [2,5,0]
 // [1,7,9]
 // [0,9,0]
-// [n-i-1, 2*i-1, n-i-1]
+// [0,9,0]
+// [1,7,9]
+// [2,5,0]
+// [3,3,3]
+// [4,1,4]
+// [combinaing two patterns]
 
 void printPattern(int n){
     for(int i=0;i<n;i++){
@@ -32,6 +37,21 @@ void printPattern(int n){
         }
         // space
         for(int j=0;j<n-i-1;j++){
+            cout<< " ";
+        }
+        cout << endl;
+    }
+    for(int i=0;i<n;i++){
+        // space
+        for(int j=0;j<i;j++){
+            cout << " ";
+        }
+        // star
+        for(int j=0;j<2*n-(2*i+1);j++){
+            cout << "*";
+        }
+        // space
+        for(int j=0;j<i;j++){
             cout<< " ";
         }
         cout << endl;

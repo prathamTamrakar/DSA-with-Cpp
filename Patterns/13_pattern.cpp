@@ -9,11 +9,11 @@ using namespace std;
 
 
 void printPattern(int n){
-    int count = 1;
+    int num = 1;
     for(int i=0;i<n;i++){
         for(int j=0;j<=i;j++){
-            cout << count << " ";
-            count+=1;
+            cout << num << " ";
+            num+=1;
         }
         cout << endl;
     }

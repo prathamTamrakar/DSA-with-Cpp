@@ -8,6 +8,7 @@ int main()
     // as above, it does not store in any particular order it has a better complexity that set in most cases, except some when collison happens
     // random order
     // O(1) complexity
+    // it has O(1) time complexity and O(n) once in a blue moon
     st.insert(1);
     st.insert(2);
     st.insert(3);

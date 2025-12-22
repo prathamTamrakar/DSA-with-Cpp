@@ -1,0 +1,45 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int n;
+    cin >> n;
+    int arr[n];
+    for(int i=0;i<n;i++){
+        cin >> arr[i];
+    }
+    unordered_map<int, int> map; // Stores frequency of each element
+
+    // Count frequencies of all elements
+    for (int i = 0; i < n; i++)
+        map[arr[i]]++;
+
+    int maxFreq = 0, minFreq = n;
+    int maxEle = 0, minEle = 0;
+
+    // Traverse the map to find elements with max and min frequencies
+    for (auto it : map)
+    {
+        int element = it.first;
+        int count = it.second;
+
+        // Update max frequency element
+        if (count > maxFreq)
+        {
+            maxFreq = count;
+            maxEle = element;
+        }
+
+        // Update min frequency element
+        if (count < minFreq)
+        {
+            minFreq = count;
+            minEle = element;
+        }
+    }
+
+    // Print results
+    cout << "The highest frequency element is: " << maxEle << "\n";
+    cout << "The lowest frequency element is: " << minEle << "\n";
+    return 0;
+}

@@ -1,6 +1,9 @@
 #include <bits/stdc++.h>
-
 using namespace std;
+
+// https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/
+// https://www.geeksforgeeks.org/problems/remove-duplicate-elements-from-sorted-array/1
+// https://takeuforward.org/data-structure/remove-duplicates-in-place-from-sorted-array
 
 int removeDuplicates(int n, int arr[])
 {

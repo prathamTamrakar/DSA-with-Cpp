@@ -2,6 +2,7 @@
 using namespace std;
 
 // https://www.geeksforgeeks.org/problems/check-if-an-array-is-sorted0701/1
+// https://takeuforward.org/data-structure/check-if-an-array-is-sorted
 
 bool findArraySorted(int n, int arr[]){
     if (n <= 1) return true;

@@ -43,7 +43,7 @@ void leftRotate(int n, int arr[], int k){
     reverseArray(arr,0,n-1);
 
 }
-
+// brute force
 void rotateLeft(int n, int arr[], int k)
 {
     k = k % n;

@@ -1,6 +1,10 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+// https://leetcode.com/problems/single-number/submissions/
+// https://takeuforward.org/arrays/find-the-number-that-appears-once-and-the-other-numbers-twice
+// https://www.geeksforgeeks.org/problems/single-number1014/1
+
 // bruteforce method
 int singleNumber(int n,int arr[]){
     for(int i=0;i<n;i++){

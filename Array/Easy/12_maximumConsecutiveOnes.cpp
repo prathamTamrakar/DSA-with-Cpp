@@ -1,6 +1,10 @@
 #include <iostream>
 using namespace std;
 
+// https://www.geeksforgeeks.org/problems/maximize-number-of-1s0905/1
+// https://leetcode.com/problems/max-consecutive-ones/description/
+// https://takeuforward.org/data-structure/count-maximum-consecutive-ones-in-the-array
+
 int maximumConsecutiveOnes(int n, int arr[]){
     // cout << *(arr+2)<< " ";
     // cout << arr+2;

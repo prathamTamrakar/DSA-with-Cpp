@@ -4,6 +4,7 @@
 using namespace std;
 // https://takeuforward.org/arrays/find-the-missing-number-in-an-array
 // https://leetcode.com/problems/missing-number/description/
+// https://www.geeksforgeeks.org/problems/missing-number-in-array1416/1
 
 int findMissingNumberWithHashing(int n, int arr[]){
     int hash[n] = {0};
